@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Suit House</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" id="d1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Tailoring Management System</title>
+    </head>
+    <body>
+         <!-- Header -->
+         <header>
+                     
+             <!-- Promo -->
+            <div class="promo">
+                <h1><u>The Suit House</u></h1>
+                <h4>Best suiting and fitting</h4>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square"></i></a>
+            </div>
+
+                 <div class="container">
+                 <input type="checkbox" name="" id="check">
+                 <div class="logo-container">
+                     <h3 class="logo">Suit<span>House</span></h3>
+                 </div>
+
+                 <div class="nav-btn">
+                     <div class="nav-links">
+                         <ul>
+                             <li class="nav-link" style="--i: .6s">
+                                 <a href="#">Home</a>
+                             </li>
+                             <li class="nav-link" style="--i: .85s">
+                                <a href="#">About</a>
+                             </li>
+                             <li class="nav-link" style="--i: 1.1s">
+                                <a href="#">order</a>
+                             </li>
+                             <li class="nav-link" style="--i: 1.35s">
+                                <a href="#">Collection</a>
+                             </li>
+                             <li class="nav-link" style="--i: 1.55s">
+                                <a href="#">Team</a>
+                             </li>
+                             <li class="nav-link" style="--i: 1.7s">
+                                <a href="#">Contact</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="log-sign" style="--i: 1.9s">
+                         <a href="#" class="btn transparent">Log in</a>
+                     </div>
+                 </div>
+                 <div class="hamburger-menu-container">
+                     <div class="hamburger-menu">
+                         <div></div>
+                     </div>
+                 </div>
+             </div>
+         </header>
+             <main>
+                 <section>
+                     <div class="overlay"></div>
+                 </section>
+             </main>
+
+             <!-- Image Slider -->
+
+             <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="img/1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="img/2.png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="img/1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script><hr>
+
+          <!-- About Us -->
+          <section id="about">
+            <div class="about container" id="about">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- <img src="img/3.jpg" class="profile-img"> -->
+                        <h3><u>What We Do</u></h3>
+                        <p>Our Mayur Fabrics (Formerly known as Mayur Suitings) line offers classic fabrics in a wide range of fibre blends at an affordable price. These quality fabrics are available for export as well as fine domestic tailoring. With the technical resources of RSWM EDGE, our premium yarn spinning operation, we are continuously developing new fabrications with state-of-the-art fibres. These blends appeal to trend-conscious customers and those seeking technical performance in their products. We can blend any combination imaginable for applications ranging from high-street fashion to industrial workwear. Internationally, our Mayur Fabrics (Formerly known as Mayur Suitings) collection is used by some of the world’s leading fashion brands, including Kenneth Cole, Marks & Spencer, Perry Ellis, Ann Taylor and H&M.</p> <br>
+                        <p>Our Mayur Fabrics (Formerly known as Mayur Suitings) line offers classic fabrics in a wide range of fibre blends at an affordable price. These quality fabrics are available for export as well as fine domestic tailoring. With the technical resources of RSWM EDGE, our premium yarn spinning operation, we are continuously developing new fabrications with state-of-the-art fibres. These blends appeal to trend-conscious customers and those seeking technical performance in their products.</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
 </html>
